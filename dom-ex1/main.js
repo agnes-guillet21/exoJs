@@ -14,6 +14,12 @@ function displayToggleRectangle(){
     rectangle.classList.toggle('active');
 }
 
+function addColor(){
+    rectangle.add("good");
+}
+function colorBackground(){
+    rectangle.add("red");
+}
 
 
 /************************************************************************************/
@@ -27,7 +33,7 @@ function main(){
     p = document.querySelector('#p1');
     btn = document.querySelector("#toggle-rectangle");
 
-
     btn.addEventListener("click", displayToggleRectangle);
+    rectangle.addEventListener(" onmouseenter ", colorBackground);
 }
 document.addEventListener("DOMContentLoaded", main);

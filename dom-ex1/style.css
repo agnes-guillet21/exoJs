@@ -7,5 +7,15 @@
 }
 
 .active {
-    display: block;
+    display: none;
+}
+
+.good
+{
+    background-color:limegreen;
+}
+
+.red
+{
+    background-color:darkred;
 }
